@@ -1,0 +1,68 @@
+[project]
+name = "pipepdf"
+version = "0.0.1"
+description = "Commandline PDF manipulation tool"
+authors = [
+  { name = "Robin Weiland", email = "python@robin-weiland.com" },
+]
+maintainers = [
+  { name = "Robin Weiland", email = "python@robin-weiland.com" },
+]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.13"
+
+keywords = ["pdf", "documents", "cli", "tools"]
+
+# https://pypi.org/pypi?%3Aaction=list_classifiers
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "pypdf>=6.3.0",
+    "rich>=14.2.0",
+    "typer>=0.20.0",
+]
+
+[dependency-groups]
+dev = [
+  {include-group = "lint"},
+  {include-group = "test"},
+  {include-group = "docs"},
+]
+lint = [
+  "ruff",
+  "ty"
+]
+test = [
+  "pytest"
+]
+docs = [
+  "sphinx",
+  "sphinx-press-theme"
+]
+
+[project.urls]
+Homepage = "https://github.com/robin-weiland/pipepdf"
+Documentation = "https://pipepdf.readthedocs.io/en/latest/"
+Source = "https://github.com/robin-weiland/pipepdf"
+Issues = "https://github.com/robin-weiland/pipepdf/issues"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
