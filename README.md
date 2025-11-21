@@ -46,7 +46,7 @@ I intend to implement at least two channels, where one will be slightly ahead of
 
 In terms of philosopy, I intended this tool to be as minimally invasive as possible.
 This means concretly that (so far) I designed it in a way that does not create any temp wor working files on the system.
-I am aware that this closes a lot of opurtunities for possibilites of this tool. 
+I am aware that this closes a lot of opurtunities for possibilites of this tool.
 In theory, I am not entirely opposed to this idea, but I did not come up with a convincing approach to this problem yet.
 If you feel like you have an idea that uses temprary or staged files, please feel free to create an issue and/or merge request.
 
